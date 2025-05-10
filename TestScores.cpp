@@ -16,7 +16,7 @@ using namespace std;
 TestScores::TestScores(int arr[]) {
     
    /*************************************************
-	* Define the exception string                   *
+	* Define the exception string               *
     *************************************************/
     string exceptionString = "Error: Test score out of valid range (0 - 100)\n";
     
@@ -25,15 +25,15 @@ TestScores::TestScores(int arr[]) {
     *************************************************/
     for (int i = 0; i < 5; i++) {
 
-		/********************************************
-		 * Throw an exception                       *
-		 ********************************************/
+        /********************************************
+	 * Throw an exception                       *
+	 ********************************************/
         if (arr[i] < 0 || arr[i] > 100) {
             throw exceptionString;
         }
 
        /*********************************************
-		* Proper assignment of the score            *
+	* Proper assignment of the score            *
         *********************************************/
         scores[i] = arr[i];  
     }
@@ -49,7 +49,7 @@ double TestScores::getAverage() const {
     }	
 
     /************************************************
-	* Return the average of the scores              *
-    *************************************************/
+     * Return the average of the scores             *
+     ************************************************/
     return total / 5;
 }
